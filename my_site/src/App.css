@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+ul {
+  list-style: none; /* remove os pontinhos da lista */
+}
+
+li {
+  display: inline-block; /* faz os itens da lista ficarem em linha */
+  margin: 10px; /* adiciona uma margem entre os itens */
+}
