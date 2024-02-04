@@ -37,6 +37,15 @@ function Projects(){
             },300)
     },[])
 
+    function removeProject(id){
+        fetch(`http://localhost:5000/projects/${id}`,{
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        }).then().catch(err =>console.log(err))
+    }
+
     return(
         <div className={styles.project_container}>
             <div className={styles.title_container}>
